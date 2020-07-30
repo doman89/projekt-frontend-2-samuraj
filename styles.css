@@ -1,0 +1,126 @@
+@keyframes cloud {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	25% {
+		transform: translate(-50px, -15px);
+	}
+
+	50% {
+		transform: translate(-100px, 0);
+	}
+
+	75% {
+		transform: translate(-50px, 15px);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes tree {
+	0% {
+		transform: rotate(0);
+	}
+
+	50% {
+		transform: rotate(-10deg);
+	}
+
+	100% {
+		transform: rotate(0);
+	}
+}
+
+.scene {
+	position: relative;
+	height: 100vh;
+	background-color: #add8e6;
+	overflow: hidden;
+}
+
+.layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.layer > img {
+	position: absolute;
+	width: 120%;
+}
+
+.layer .japan-1 {
+	left: 0;
+	top: 10%;
+	width: 100%;
+}
+
+.layer .japan-2 {
+	top: 25%;
+	left: -10%;
+}
+
+.layer .japan-3 {
+	top: 40%;
+	left: -10%;
+}
+
+.layer .japan-4 {
+	top: 33%;
+	left: -10%;
+}
+
+.layer .japan-5 {
+	top: 43%;
+	left: -10%;
+}
+
+.layer .japan-6 {
+	top: 65%;
+	left: -10%;
+}
+
+.layer .japan-7 {
+	top: 5%;
+	left: 5%;
+	width: 8%;
+}
+
+.layer .japan-8 {
+	top: 10%;
+	left: -5%;
+	width: 25%;
+	
+}
+
+.layer .japan-9 {
+	top: 10%;
+	right: 0;
+	width: 45%;
+}
+
+.layer .japan-8,
+.layer .japan-9 {
+	animation-duration: 10s;
+	animation-name: cloud;
+	animation-iteration-count: infinite;
+}
+
+.layer .japan-10 {
+	top: 35%;
+	right: -23%;
+	width: 55%;
+	animation-duration: 20s;
+	animation-name: tree;
+	animation-iteration-count: infinite;
+	transform-origin: center right;
+}
+
+.layer .japan-11 {
+	bottom: 5%;
+	left: 5%;
+	width: 5%;
+}
